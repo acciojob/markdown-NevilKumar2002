@@ -7,12 +7,12 @@ const MarkdownEditor = () => {
 
   useEffect(() => {
     // Convert the markdown text to HTML and update the 'html' state
-    const convertToHTML = () => {
-      // Implement the logic to convert markdown to HTML here
-      // You can use a library like 'marked' or 'remarkable' for this purpose
-      const convertedHtml = yourMarkdownToHtmlFunction(markdown);
-      setHtml(convertedHtml);
-    };
+    // const convertToHTML = () => {
+    //   // Implement the logic to convert markdown to HTML here
+    //   // You can use a library like 'marked' or 'remarkable' for this purpose
+    //   const convertedHtml = yourMarkdownToHtmlFunction(markdown);
+    //   setHtml(convertedHtml);
+    
 
     setIsLoading(true);
     setTimeout(() => {
@@ -37,7 +37,7 @@ const MarkdownEditor = () => {
         />
       </div>
       <div className="preview">
-        {isLoading ? <div className="loading">{markdown}</div> : <div dangerouslySetInnerHTML={{ __html: html }} />}
+        {isLoading ? <div className="loading">{markdown}</div> :" "}
       </div>
     </div>
   

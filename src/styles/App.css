@@ -18,7 +18,13 @@ button{
     border:2px solid black;
     margin:5px;
 }
-.textarea ,.preview{
+/* .textarea{
     width:40%;
     height:40%;
+} */
+.loading, textarea{
+    /* border:2px solid */
+    width:30vw;
+    height:50vh;
+    text-overflow: wrap;
 }
