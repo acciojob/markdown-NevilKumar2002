@@ -23,21 +23,24 @@ const MarkdownEditor = () => {
 
   const handleInputChange = (e) => {
     setMarkdown(e.target.value);
+    
   };
-
+//   console.log("hello", markdown)
   return (
-    <div className="markdown-editor">
+   
+     <div className="markdown-editor">
       <div className="textarea">
         <textarea
           placeholder="Write your markdown here"
           value={markdown}
-          onChange={handleInputChange}
+          onChange={e=> setMarkdown(e.target.value)}
         />
       </div>
       <div className="preview">
-        {isLoading ? <div className="loading">Loading...</div> : <div dangerouslySetInnerHTML={{ __html: html }} />}
+        {isLoading ? <div className="loading">{markdown}</div> : <div dangerouslySetInnerHTML={{ __html: html }} />}
       </div>
     </div>
+  
   );
 };
 

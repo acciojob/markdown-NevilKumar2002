@@ -10,3 +10,15 @@ button{
     justify-content: center;
     align-items: center;
 }
+.markdown-editor{
+    display: flex;
+    /* border:2px solid red; */
+}
+.textarea ,.preview{
+    border:2px solid black;
+    margin:5px;
+}
+.textarea ,.preview{
+    width:40%;
+    height:40%;
+}
